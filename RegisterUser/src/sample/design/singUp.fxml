@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SignUpController">
+    <children>
+        <AnchorPane prefHeight="42.0" prefWidth="500.0" style="-fx-background-color: #ff4d55;">
+            <children>
+                <Text fill="#4a4a4a" layoutX="190.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Реєстрація">
+                    <font>
+                        <Font name="Segoe UI Black Italic" size="20.0" />
+                    </font>
+                </Text>
+            <Button fx:id="exitButtonNew" layoutX="435.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: #ff4d55; -fx-border-color: #000; -fx-background-radius: 10; -fx-border-radius: 10;" text="Увійти" textFill="#4a4a4a" />
+            <Text layoutX="7.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@gmail">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✉" wrappingWidth="22.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+        <Text fill="#ff4d55" layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логін:">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Text>
+        <TextField fx:id="loginText" layoutX="187.0" layoutY="81.0" prefHeight="25.0" prefWidth="274.0" promptText="Введіть логін" style="-fx-background-color: #666; -fx-background-radius: 10;" />
+        <Text fill="#ff4d55" layoutX="11.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повторення пароля:">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Text>
+        <PasswordField fx:id="passwordText2" layoutX="187.0" layoutY="232.0" prefHeight="25.0" prefWidth="274.0" promptText="Введіть пароль повторно" style="-fx-background-color: #666; -fx-background-radius: 10;" />
+        <Button fx:id="singUpButtonNew" layoutX="150.0" layoutY="296.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #ff4d55; -fx-background-radius: 10;" styleClass="r" text="Зареєструватися">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+      <Text fill="#ff4d55" layoutX="14.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordText1" layoutX="187.0" layoutY="182.0" prefHeight="25.0" prefWidth="274.0" promptText="Введіть пароль" style="-fx-background-color: #666; -fx-background-radius: 10;" />
+      <Text fill="#ff4d55" layoutX="13.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Електронна адреса:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailText" layoutX="187.0" layoutY="132.0" prefHeight="25.0" prefWidth="274.0" promptText="Введіть електронну адресу " style="-fx-background-color: #666; -fx-background-radius: 10;" />
+      <Text fx:id="emailError" fill="RED" layoutX="194.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="259.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id="passError" fill="RED" layoutX="197.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="259.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id="loginError" fill="RED" layoutX="195.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

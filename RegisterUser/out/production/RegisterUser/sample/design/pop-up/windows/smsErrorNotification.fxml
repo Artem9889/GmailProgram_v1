@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="120.0" prefWidth="300.0" style="-fx-background-color: #666;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SmsErrorNotification">
+    <children>
+        <Button fx:id="okButton" layoutX="123.0" layoutY="73.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: ff9c08; -fx-border-color: #222;" text="Ок">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Text layoutX="49.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дані введено не коректно! Перевірьте будь ласка." wrappingWidth="201.10302734375">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
